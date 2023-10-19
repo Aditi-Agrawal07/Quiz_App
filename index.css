@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+background: linear-gradient(#141e30, #243b55);
+}
+.container-fluid{
+  height: 100vh;
+
+}
+.user, .set_selection, .questions,.result{
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.7rem;
+
+  max-width: 70%;
+  margin: 0% auto;
+  margin-top: 2rem;
+  width: 30%;
+  height: 80%;
+  top: 10%;
+  left: 36%;
+
+/* color: #fff; */
+ 
+}
+.result{
+  display: none;
+}
+.answer p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: 0.3rem;
+  color: #000;
+  border: 1px solid #2449746e;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.85rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  cursor: pointer;
+  background-color: transparent;
+  user-select: none;
+}
+.user_img{
+  position: absolute;
+align-items: center;
+display: flex;
+top:20%;
+  
+}
+.user_img img{
+  height: 20%;
+  width: 20%;
+  justify-content: center;
+  
+}
+.user_img h2, .set_selection h2{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 45px;
+}
+
+.name_input{
+  position: relative;
+  top: 60%;
+  left: 10%;
+}
+.name_input input{
+  border-radius: 1.5rem;
+  width: 20rem;
+  height: 2.5rem;
+  padding: 10px;
+  outline: transparent;
+  position: absolute;
+}
+.arrow_btn{
+  position: absolute;
+  left: 61%;
+  top: 3px;
+  background-color: linear-gradient(#141e30, #243b55);;
+  border-radius: 2rem;
+  padding: 5px 7px;
+}
+
+.arrow_btn i{
+  font-size: 20px;
+  cursor: pointer;
+}
+.set_selection, .questions{
+  display: none;
+  position: relative;
+}
+.set_selection h2{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.active{
+  background-color: green;
+  color: white;
+}
+.opt{
+  border: 1px solid black;
+  padding: 12px;
+  margin-top: 10px;
+}
+#setA, #setB, #setC, #setD{
+  position: inherit;
+  top:  40%;
+  left: 14%;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  box-shadow: 2px 2px 20px;
+}
+
+.progress{
+  position: relative;
+  top:10px;
+  width: 95%;
+left: 10px;
+border:  1px solid black;
+border-radius: .5rem;
+height: 3%;
+}
+.ques_no{
+  position: relative;
+  text-align: end;
+  margin-top: 21px;
+  margin-right: 12px;
+}
+.top{
+  position: relative;
+  height: 65%;
+ padding: 10%;
+ 
+}
+.bottom{
+  position:relative;
+  padding: 5px;
+
+}
+.ques h2{
+  font-size: 30px;
+}
+#checked{
+  background: green;
+  
+}
+.result{
+  position: absolute;
+  overflow:scroll;
+  padding: 20px;
+  width: 50%;
+}
+.user_Name{
+  justify-content: center;
+  /* position: relative; */
+}
+.user_Name img{
+  height: 50%;
+  width: 50%;
+ margin-left: 20%;   
+ 
+}
+.user_Name h1{
+  font-size: 5rem;
+}
+#checked p{
+  color: #fff;
+}
+.score{
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+.navigate_ques{
+  background-color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: .5rem;
+cursor: pointer;
+box-shadow: 2px 2px 20px;
+}
+
+.btns{
+  display: flex;
+  position: absolute;
+  padding: 20px 0px;
+  cursor: pointer;
+  
+}
+#review-previous-btn,#previous-btn{
+background-color: brown;
+padding: 5px;
+margin-right: 3px;
+border-radius: .3rem;
+color: aliceblue;
+/* display: none; */
+}
+.review-next-btn, .next-btn{
+background-color: blue;
+padding: 5px;
+margin-right: 3px;
+border-radius: .3rem;
+color: aliceblue;
+}
+#review-previous-btn{
+  display: none;
+}
+.review-next-btn{
+  display: none;
+}
+.submit_btn{
+background-color: green;
+display:inline-block;
+padding: 5px;
+margin-right: 3px;
+border-radius: .3rem;
+color: aliceblue;
+}
+#review-btn{
+margin-left: 12rem;
+padding: 5px;
+margin-right: 3px;
+border-radius: .3rem;
+  background-color: greenyellow;
+  color: aliceblue    ;
+}
+.progressBar{
+  background-color: green;
+  height: 100%;
+  width: 0%;
+
+}
+.try_again{
+  width: 20%;
+  border-radius: .5rem;
+  background-color: blue;
+  color: white;
+  padding: 2%;
+}

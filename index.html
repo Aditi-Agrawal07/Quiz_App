@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+ 
+<body>
+<div class="container-fluid">
+    <div class="user">
+        <div class="user_img">
+            <img src="images/quiz.png" alt="">
+            <h2>Javascript Quiz</h2>
+        </div>
+   <div class="name_input">
+    <input type="text" name = "username" placeholder="Enter your name" required>
+  <span class="arrow_btn">
+   <!-- <i class="fa-solid fa-arrow-right"></i> -->
+   submit
+</span>
+</div>
+    </div>
+    <div class="set_selection" id ="select_set">
+       <h2>Select The set</h2>
+       <div class="1" id = "setA">Set A</div>
+       <div class="2" id = "setB">Set B</div>
+       <div class="3" id = "setC">Set C</div>
+       <div class="4" id = "setD">Set D</div>
+    </div>
+    <div class="questions">
+        <div class="progress">
+            <div class="progressBar"></div>
+        </div>
+        <div class="ques_no">0/10</div>
+       <div class="top">
+        <div class="ques">
+                 <h2></h2>
+        </div>
+
+        <div class="option">
+          <div class="opt"></div>
+          <div class="opt"></div>
+          <div class="opt"></div>
+          <div class="opt"></div>
+      
+        </div>
+        <div class="btns">
+            <div id ="previous-btn">Previous</div>
+            <div class = "next-btn">Next</div>
+            <div id ="review-previous-btn">Previous</div>
+            <div class = "review-next-btn">Next</div>
+            <div class = "submit_btn" onclick="submit()">Submit</div>
+            <div id = "review-btn" onclick="isReview()">Review</div>
+        </div>
+       </div>
+       <div class="bottom">
+        <div class="navigate_ques" id = "que1" onclick="navigate(1) ">1</div>
+        <div class="navigate_ques" id = "que2" onclick="navigate(2)">2</div>
+        <div class="navigate_ques" id = "que3" onclick="navigate(3)">3</div>
+        <div class="navigate_ques" id = "que4" onclick="navigate(4)">4</div>
+        <div class="navigate_ques" id = "que5" onclick="navigate(5)">5</div>
+        <div class="navigate_ques" id = "que6" onclick="navigate(6)">6</div>
+        <div class="navigate_ques" id = "que7" onclick="navigate(7)">7</div>
+        <div class="navigate_ques" id = "que8" onclick="navigate(8)">8</div>
+        <div class="navigate_ques" id = "que9" onclick="navigate(9)">9</div>
+        <div class="navigate_ques" id = "que10" onclick="navigate(10)">10</div>
+       </div>
+    </div>
+    <div class="result">
+        <div class="user_Name">
+            <img src="images/—Pngtree—trophy golden cup and falling_5895513.png" alt="">
+              <h1>Great</h1>
+        </div>
+        <div class="score"></div>
+        <div class="Wrong_answer"></div>
+        <div class="UnattemptedQuestion"></div>
+        <div class="resultedBody"></div>
+        <div class="try_again" onclick="tryAgain()">Try Again</div>
+    </div>
+</div>
+
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src = "index.js"></script>
+
+</body>
+</html>
+  
